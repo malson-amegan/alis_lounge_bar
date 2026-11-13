@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Réservez une table au ALIS Lounge BAR à Lomé. Une demande rapide et élégante pour organiser votre moment lounge."
+    />
+    <title>Réservation | ALIS Lounge BAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="reservation-page">
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navigation principale">
+        <a href="index.html" class="brand" aria-label="ALIS Lounge BAR Accueil">
+          <span class="brand-mark">ALIS</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-panel">
+          <ul class="nav-links">
+            <li><a href="index.html#home">Accueil</a></li>
+            <li><a href="index.html#experience">L'expérience</a></li>
+            <li><a href="index.html#gallery">Galerie</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="index.html#events">Événements</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+
+          <a href="reservation.html" class="btn btn-primary nav-cta">Réserver une table</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="reservation-hero">
+        <div class="reservation-overlay"></div>
+        <div class="container reservation-hero-content">
+          <p class="section-kicker">Réservation</p>
+          <h1>Préparez votre soirée ALIS</h1>
+          <p>
+            Réservez votre table pour un moment de détente, de convivialité et d'élégance à Lomé.
+          </p>
+        </div>
+      </section>
+
+      <section class="reservation-shell container">
+        <div class="reservation-card reservation-form-card">
+          <div class="reservation-card__head">
+            <p class="section-kicker">Demande de réservation</p>
+            <h2>Réserver une table</h2>
+          </div>
+
+          <form id="reservation-form" class="reservation-form">
+            <div class="form-grid">
+              <label class="field">
+                <span>Nom complet</span>
+                <input type="text" name="name" placeholder="Votre nom" required />
+              </label>
+
+              <label class="field">
+                <span>Téléphone</span>
+                <input type="tel" name="phone" placeholder="+228 ..." required />
+              </label>
+
+              <label class="field">
+                <span>Nombre de personnes</span>
+                <select name="guests" required>
+                  <option value="2">2 personnes</option>
+                  <option value="4">4 personnes</option>
+                  <option value="6">6 personnes</option>
+                  <option value="8">8 personnes</option>
+                  <option value="10+">10 personnes et plus</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span>Date souhaitée</span>
+                <input type="date" name="date" required />
+              </label>
+
+              <label class="field">
+                <span>Heure souhaitée</span>
+                <input type="time" name="time" required />
+              </label>
+
+              <label class="field">
+                <span>Occasion</span>
+                <select name="occasion">
+                  <option value="Dîner romantique">Dîner romantique</option>
+                  <option value="Rencontre entre amis">Rencontre entre amis</option>
+                  <option value="Soirée / événement">Soirée / événement</option>
+                  <option value="Autre">Autre</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="field field-full">
+              <span>Informations complémentaires</span>
+              <textarea name="message" rows="5" placeholder="Détails, préférence de table, demande spéciale..."></textarea>
+            </label>
+
+            <div class="reservation-actions">
+              <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+              <a href="https://wa.me/22890246655?text=Bonjour%20ALIS%20Lounge%20BAR%2C%20je%20souhaite%20r%C3%A9server%20une%20table." class="btn btn-secondary" target="_blank" rel="noreferrer">WhatsApp</a>
+            </div>
+          </form>
+        </div>
+
+        <aside class="reservation-card reservation-info-card">
+          <div class="reservation-card__head">
+            <p class="section-kicker">Contact</p>
+            <h2>ALIS Lounge BAR</h2>
+          </div>
+
+          <ul id="reservation-contact-list" class="contact-list"></ul>
+
+          <div class="info-banner">
+            <strong>Informations utiles</strong>
+            <p>
+              Les détails exacts de la réservation seront confirmés directement avec le lounge selon les disponibilités.
+            </p>
+          </div>
+
+          <div class="quick-actions">
+            <a href="tel:+22890246655" class="btn btn-primary">Appeler</a>
+            <a href="mailto:etsalis.mag@gmail.com" class="btn btn-secondary">Email</a>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <span>© 2025 ALIS Lounge BAR</span>
+          <span>Nyékonakpoè • Lomé • Togo</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
